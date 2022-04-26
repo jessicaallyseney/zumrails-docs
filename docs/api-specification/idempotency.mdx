@@ -1,12 +1,12 @@
 ---
 title: Idempotency
 description:
-  What's sdempotency and how it works on Zūm.
+  What is idempotency and how it works with Zūm APIs.
 ---
 
 # Idempotency
 
-In Zūm APIs, idempotency means that requests that have been previously processed successfully are not reprocessed again. The response for the completed processing is reported instead.
+Idempotency means that successfully processed requests are not reprocessed. The response for the completed processing is reported instead.
 
 All `POST` requests accept idempotency keys. Sending idempotency keys in `GET` and `DELETE` requests will have no effect, as these type of requests are idempotent by definition.
 
